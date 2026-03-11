@@ -121,7 +121,48 @@ Analyze what the imported skill does and recommend complementary skills. See [su
 >
 > Want me to install any of these alongside it?"
 
-## Step 6: Install
+## Step 6: Duplicate & Overlap Check
+
+Before installing, check if the user already has a skill that covers the same ground.
+
+**Check for exact duplicates:**
+```bash
+# Check personal skills
+ls ~/.claude/skills/
+
+# Check project skills
+ls .claude/skills/ 2>/dev/null
+```
+
+If a skill with the same `name` already exists, tell the user:
+> "You already have a skill called `<name>` installed at `<path>`. Installing this one would overwrite it. Want to compare them first?"
+
+If yes, read both SKILL.md files and present a side-by-side comparison of their descriptions, capabilities, and structure.
+
+**Check for functional overlaps:**
+
+Read the descriptions of all installed skills and compare with the imported skill's description. Look for:
+- Same domain (e.g., two skills for "code review")
+- Same trigger phrases (e.g., both trigger on "audit this contract")
+- Overlapping capabilities (e.g., both generate commit messages)
+
+If overlap found:
+> "You already have `<existing-skill>` which also does [overlapping capability]. Here's how they differ:
+>
+> | | `<existing>` | `<imported>` |
+> |---|---|---|
+> | Focus | ... | ... |
+> | Tools | ... | ... |
+> | Depth | ... | ... |
+>
+> Options:
+> 1. Install alongside it (both will be available, Claude picks the best match)
+> 2. Replace the existing one
+> 3. Skip installation"
+
+If no duplicates or overlaps found, say so and proceed.
+
+## Step 7: Install
 
 Ask the user where to install:
 

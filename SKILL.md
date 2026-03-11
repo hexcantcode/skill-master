@@ -58,7 +58,8 @@ Read and follow [import-audit-workflow.md](references/import-audit-workflow.md).
 4. **Gate** — Block DANGER, warn on CAUTION, approve SAFE
 5. **Validate** — Check structure + frontmatter against spec
 6. **Supplement** — Suggest complementary skills
-7. **Install** — Place in correct directory
+7. **Deduplicate** — Check if an existing skill already covers the same ground
+8. **Install** — Place in correct directory
 
 ## REVIEW Mode
 
@@ -67,7 +68,8 @@ Combine both checks on an existing skill:
 1. Run `python ${CLAUDE_SKILL_DIR}/scripts/validate_skill.py <path-to-skill>`
 2. Run `python ${CLAUDE_SKILL_DIR}/scripts/security_scan.py <path-to-skill>`
 3. Read [quality-checklist.md](references/quality-checklist.md) and evaluate manually
-4. Present combined report with actionable fixes
+4. Check for duplicate or overlapping skills already installed
+5. Present combined report with actionable fixes
 
 ## Security: Non-Negotiable
 
