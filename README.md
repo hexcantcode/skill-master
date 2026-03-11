@@ -1,6 +1,10 @@
-# skill-master
+<p align="center">
+  <img src="assets/banner.png" alt="skill-master" width="600" />
+</p>
 
-**The skill for building, importing, and auditing agent skills.**
+<h1 align="center">skill-master</h1>
+
+<p align="center"><strong>The skill for building, importing, and auditing agent skills.</strong></p>
 
 skill-master is a meta-skill for [Claude Code](https://claude.ai/code) that guides you through creating new skills from scratch, importing skills from external sources with security vetting, and reviewing existing skills for quality. Built primarily on [**The Complete Guide to Building Skills for Claude**](https://resources.anthropic.com/hubfs/The-Complete-Guide-to-Building-Skill-for-Claude.pdf) by Anthropic, with security hardening from real-world threat research.
 
