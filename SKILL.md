@@ -41,8 +41,9 @@ See [spec-quick-reference.md](references/spec-quick-reference.md) for the full s
 Read and follow [creation-workflow.md](references/creation-workflow.md). Summary:
 
 1. **Understand** — Ask purpose, audience, and use cases
-2. **Decide** — Walk user through 4 critical architectural decisions (explained for non-technicals)
-3. **Draft** — Generate frontmatter + SKILL.md body with progressive disclosure
+2. **Deduplicate** — Check if an existing skill already covers the same ground
+3. **Decide** — Walk user through 4 critical architectural decisions (explained for non-technicals)
+4. **Draft** — Generate frontmatter + SKILL.md body with progressive disclosure
 4. **Supplement** — Recommend complementary skills from the ecosystem
 5. **Validate** — Run `scripts/validate_skill.py` and `scripts/security_scan.py`
 6. **Scaffold** — Create the full directory structure

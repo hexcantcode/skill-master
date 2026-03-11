@@ -20,6 +20,38 @@ Ask the user these questions (adapt language to their technical level):
 - Scope: Personal (`~/.claude/skills/`), Project (`.claude/skills/`), or Plugin
 - Complexity: Simple (SKILL.md only) vs. Complex (scripts, references, assets)
 
+## Step 1b: Check for Existing Skills
+
+Before going further, check if a skill that covers the same ground already exists.
+
+**Scan installed skills:**
+```bash
+# Personal skills
+ls ~/.claude/skills/
+
+# Project skills
+ls .claude/skills/ 2>/dev/null
+```
+
+Read the description of each installed skill and compare with what the user described in Step 1. Look for:
+- Same domain or purpose
+- Overlapping trigger phrases or scenarios
+- Skills that already cover part of what the user wants
+
+**If a match is found:**
+> "You already have `<existing-skill>` installed, which does [overlapping thing]. Here's what it covers:
+>
+> [Brief summary of existing skill's capabilities]
+>
+> Options:
+> 1. **Extend it** — Add the missing capabilities to the existing skill instead of creating a new one
+> 2. **Create anyway** — Build a separate skill (both will be available, Claude picks the best match per task)
+> 3. **Replace it** — Create the new skill and remove the old one
+>
+> What would you prefer?"
+
+**If no match:** Tell the user no overlap was found and proceed to Step 2.
+
 ## Step 2: Critical Decisions (Explain Each to User)
 
 Present each decision with a plain-English explanation. Pause for user input on each.
