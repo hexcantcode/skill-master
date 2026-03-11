@@ -1,12 +1,26 @@
 <p align="center">
-  <img src="assets/banner.png" alt="skill-master" width="600" />
+  <img src="assets/banner.png" alt="skill-master" width="280" />
 </p>
 
 <h1 align="center">skill-master</h1>
 
-<p align="center"><strong>The skill for building, importing, and auditing agent skills.</strong></p>
+<p align="center"><strong>The meta-skill for creating, importing, and auditing agent skills.</strong></p>
 
-skill-master is a meta-skill for [Claude Code](https://claude.ai/code) that guides you through creating new skills from scratch, importing skills from external sources with security vetting, and reviewing existing skills for quality. Built primarily on [**The Complete Guide to Building Skills for Claude**](https://resources.anthropic.com/hubfs/The-Complete-Guide-to-Building-Skill-for-Claude.pdf) by Anthropic, with security hardening from real-world threat research.
+<p align="center">Create · Import · Audit · Secure · Ship</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Agent_Skills-open_standard-blue" alt="Agent Skills" />
+  <img src="https://img.shields.io/badge/Python-3.8+-yellow" alt="Python 3.8+" />
+  <img src="https://img.shields.io/badge/license-MIT-green" alt="MIT License" />
+  <img src="https://img.shields.io/badge/security_patterns-40+-red" alt="40+ security patterns" />
+  <img src="https://img.shields.io/badge/Claude_Code-compatible-blueviolet" alt="Claude Code" />
+</p>
+
+<br />
+
+<p align="center">
+Built primarily on <a href="https://resources.anthropic.com/hubfs/The-Complete-Guide-to-Building-Skill-for-Claude.pdf"><strong>The Complete Guide to Building Skills for Claude</strong></a> by Anthropic, with security hardening from real-world threat research.
+</p>
 
 ---
 
