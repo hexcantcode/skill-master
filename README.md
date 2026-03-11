@@ -2,13 +2,13 @@
 
 **The skill for building, importing, and auditing agent skills.**
 
-skill-master is a meta-skill for [Claude Code](https://claude.ai/code) that guides you through creating new skills from scratch, importing skills from external sources with security vetting, and reviewing existing skills for quality. It follows the [Agent Skills](https://agentskills.io) open standard and enforces security practices based on real-world threat research.
+skill-master is a meta-skill for [Claude Code](https://claude.ai/code) that guides you through creating new skills from scratch, importing skills from external sources with security vetting, and reviewing existing skills for quality. Built primarily on [**The Complete Guide to Building Skills for Claude**](https://resources.anthropic.com/hubfs/The-Complete-Guide-to-Building-Skill-for-Claude.pdf) by Anthropic, with security hardening from real-world threat research.
 
 ---
 
 ## Why This Exists
 
-The agent skills ecosystem is growing fast — [SkillHub](https://www.skillhub.club/) alone hosts 24,000+ skills. But [Snyk's ToxicSkills research](https://snyk.io/blog/toxicskills-malicious-ai-agent-skills-clawhub/) found that **13% of community skills contain critical security flaws**, including credential theft, prompt injection, and hidden malware. And creating a well-structured skill from scratch means knowing the spec, best practices, and dozens of small decisions.
+The agent skills ecosystem is growing fast. [SkillHub](https://www.skillhub.club/) alone hosts 24,000+ skills. [Snyk's ToxicSkills research](https://snyk.io/blog/toxicskills-malicious-ai-agent-skills-clawhub/) found that **13% of community skills contain critical security flaws**, including credential theft, prompt injection, and hidden malware. Creating a well-structured skill from scratch means knowing the spec, best practices, and dozens of small decisions.
 
 skill-master solves both problems:
 
